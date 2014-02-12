@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/pickStream"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/pickStream" 
+        android:textColor="@color/white"/>
+    
+
+    <Button
+        android:id="@+id/enterAnAddressButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pickStream"
+        android:text="@string/enterAddress"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/showDemoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/enterAnAddressButton"
+        android:text="@string/demo"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

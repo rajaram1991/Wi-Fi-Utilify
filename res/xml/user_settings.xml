@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="Chat Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefShowSelfChat"
+            android:summary="Shows a copy of chats sent on the screen"
+            android:title="Show own chat" >
+        </CheckBoxPreference>
+ 
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

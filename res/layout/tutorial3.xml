@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="10px" >
+
+    <TextView
+        android:id="@+id/text_kb_streamed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick an artist below to stream"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="left" />
+
+    <ImageButton
+        android:id="@+id/button_queen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/queen580heads" />
+    
+    <ImageButton
+        android:id="@+id/button_billy"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:src="@drawable/billyjoel"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:id="@+id/buttonBreakingBen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:src="@drawable/breakingben"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:id="@+id/buttonDaftPunk"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:src="@drawable/daftpunk"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:id="@+id/buttonBeatles"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:src="@drawable/beatles"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:id="@+id/buttonCCR"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:src="@drawable/bab0556"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+    
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/button_pause" />
+
+</LinearLayout>
+</ScrollView>

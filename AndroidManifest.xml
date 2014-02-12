@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wifitether"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	
+    
+    <!-- Google Play filtering --> 
+    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.wifitether.wtether.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wifitether.wtether.ThirdActivity"></activity>
+            <activity android:name="com.wifitether.wtether.FourthActivity"></activity>
+            <activity android:name="com.wifitether.wtether.SecondActivity"></activity>
+            <activity android:name="com.wifitether.wtether.FifthActivity"></activity>
+            <activity android:name="com.example.android.wifidirect.WiFiDirectActivity"></activity>
+            <!-- Used for transferring files  after a successful connection -->
+        	<service android:enabled="true" android:name="com.wifitether.wtether.FileTransferService" />
+        	
+        	<receiver android:name="com.colorcloud.wifichat.WiFiDirectBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.p2p.STATE_CHANGED" />
+                <action android:name="android.net.wifi.p2p.PEERS_CHANGED" />
+                <action android:name="android.net.wifi.p2p.THIS_DEVICE_CHANGED" />
+                <action android:name="android.net.wifi.p2p.CONNECTION_STATE_CHANGE" />
+            </intent-filter>
+        	</receiver>
+			
+        	<activity android:name="com.colorcloud.wifichat.WiFiDirectActivity">
+	        </activity>
+        	
+	        <activity android:name="com.colorcloud.wifichat.MainActivity">
+	        </activity>
+	        <activity
+            android:name="com.wifitether.chatmodule.MainActivity"
+            android:label="Chat: Log in" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.UsersListActivity"
+            android:label="Friends list" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.ChatActivity"
+            android:label="Chat room" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.MultiChatActivity"
+            android:label="Multi Chat room" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.MainActivity1"
+            android:label="@string/title_activity_main_activity1" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.ProfileMenuActivity"
+            android:label="@string/title_activity_profile_menu" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.UserSettingsActivity"
+            android:label="@string/title_activity_user_settings" >
+        </activity>
+        <activity
+            android:name="com.wifitether.chatmodule.ChangeChatBGActivity"
+            android:label="@string/title_activity_change_chat_bg" >
+        </activity>
+        <activity
+            android:name="com.example.onlinestreamer.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.onlinestreamer.OnlineStreamerActivity" />
+        <activity android:name="com.example.onlinestreamer.PickAStream" />
+	
+	        <!-- Used for transferring files  after a successful connection -->
+	        <service android:enabled="true" android:name="com.colorcloud.wifichat.FileTransferService" />
+	
+	        <service android:enabled="true" android:name="com.colorcloud.wifichat.ConnectionService" />
+        	
+    </application>
+
+</manifest>
